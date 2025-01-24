@@ -75,14 +75,15 @@ function ApplyLeave() {
       <div className='container20'>
         <h1 className='Ah1'>Apply Leave</h1>
         <form ref={form} onSubmit={sendEmail} className='formH'> {/* Form to apply for leave */}
+        <label>EmpId</label>
+          <input type='text' name="user_EmpId" required onChange={handleEmpIdChange} /> {/* Input field for employee ID */}
+          {empIdError && <span className="error-message">Employee ID cannot contain symbols</span>} {/* Error message for employee ID */}
+          <br /><br />
           <label>Name</label>
           <input type='text' name="user_name" required onChange={handleNameChange} /> {/* Input field for name */}
           {nameError && <span className="error-message">Name cannot contain symbols</span>} {/* Error message for name */}
           <br /><br />
-          <label>EmpId</label>
-          <input type='text' name="user_EmpId" required onChange={handleEmpIdChange} /> {/* Input field for employee ID */}
-          {empIdError && <span className="error-message">Employee ID cannot contain symbols</span>} {/* Error message for employee ID */}
-          <br /><br />
+          
           <label>Leave Type</label>
           <input type='text' name="user_leavetype" required /><br /><br /> {/* Input field for leave type */}
           <label>Start Date</label>

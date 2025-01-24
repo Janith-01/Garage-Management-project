@@ -21,16 +21,21 @@
   }
   
   .user-action-link {
-    margin-right: 5px;
+    padding: 5px 10px;
+    /*margin-right: 5px;*/
     text-decoration: none;
-    color: #670a53;
+    color: #f8f5f7;
+    background-color: #670a53;
+    background-size: 50px;
   }
   
   .delete-button {
     padding: 5px 10px;
     background-color: #670a53;
+    text-decoration: none;
     color: white;
-    border: none;
+   /*border: none;*/
+    background-size: 50px;
     cursor: pointer;
   }
 

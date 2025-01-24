@@ -5,7 +5,9 @@
   width: 1500px;
 
 }
-
+.search-container{
+  color: #0b0b0b;
+}
 .s1{
   background-image: url('/F:/2ND YEAR/2ND SEM/ITP/frontend/src/images/pic4.jpg');
 }
