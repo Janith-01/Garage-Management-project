@@ -308,6 +308,9 @@ import employeeRoutes from "./Routes/EmployeeRoutes.js";
 import NewEmpRoutes from "./Routes/NewEmpRoutes.js";
 import pdfRoutes from "./Routes/PdfRoutes.js";
 import pdfSchema from "./Model/pdfModel.js";
+import AuthRoutes from "./Routes/AuthRoutes.js";
+
+
 import dotenv from 'dotenv';
 
 dotenv.config();
@@ -358,6 +361,8 @@ app.use("/salaryAdd", SalaryAdd);
 app.use("/Employeeadd", employeeRoutes);
 app.use("/NewEmp", NewEmpRoutes);
 app.use("/", pdfRoutes);
+app.use("/auth", AuthRoutes);
+
 
 // Define storage for multer
 const storage = multer.diskStorage({
@@ -438,11 +443,11 @@ app.post("/NewEmp", async (req, res) => {
 });
 
 // Set dynamic port
-const PORT = process.env.PORT || 8083;
+const PORT = process.env.PORT || 8084;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
- 
+
 
 
 
